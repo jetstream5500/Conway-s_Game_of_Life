@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--SETUP-->
+		<title> Conway's Game of Life </title>
+		<!--STYLES-->
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+		<!-- <link href='responsiveDemoStyle3.css' rel='stylesheet' type='text/css'> -->
+	</head>
+	<body onload="randomFill(40)">
+		<!--CONTENT-->
+		<canvas id="game" width="1000" height="1000" style="width:500px;height:500px;border:solid 1px black"></canvas>
+		<br>
+		<button onclick="runGame(100)">start</button>
+		<!--SCRIPTS-->
+		<script src="http://d3js.org/d3.v3.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
