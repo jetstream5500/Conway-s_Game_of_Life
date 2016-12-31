@@ -2,16 +2,22 @@
 <html>
 	<head>
 		<!--SETUP-->
-		<title> Conway's Game of Life </title>
+		<title> Grid Size Changer </title>
 		<!--STYLES-->
 		<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
 		<!-- <link href='responsiveDemoStyle3.css' rel='stylesheet' type='text/css'> -->
 	</head>
-	<body onload="randomFill(40)">
+	<body>
 		<!--CONTENT-->
-		<canvas id="game" width="1000" height="1000" style="width:500px;height:500px;border:solid 1px black"></canvas>
+		Pixel Size: <input id="pixelSizeInput" type="text" size="8" value="20" oninput="updatePixelSize()">
 		<br>
-		<button onclick="runGame(100)">start</button>
+		# Rows: <input id="numRowsInput" type="text" size="8" value="50" oninput="updateNumRows()">
+		# Columns: <input id="numColsInput" type="text" size="8" value="50" oninput="updateNumCols()">
+		<br>
+		<canvas id="game" width="1000" height="1000" style="width:500px;height:500px;border:solid 1px black"></canvas>
+		<button onclick="randomFill(40)">randomFill</button>
+		<button onclick="toggleGame()">toggleGame</button>
+
 		<!--SCRIPTS-->
 		<script src="http://d3js.org/d3.v3.js"></script>
 		<script src="script.js"></script>
