@@ -47,8 +47,10 @@ function fillSquare(loc) {
 		x:loc.x*pixelSize,
 		y:loc.y*pixelSize
 	}
-	ctx.fillStyle = "#AACCFF";
-	ctx.strokeStyle = "#3377BB";
+	ctx.fillStyle = "#4488DD";
+	ctx.strokeStyle = "#FFFFFF";
+	//ctx.fillStyle = "#AACCFF";
+	//ctx.strokeStyle = "#3377BB";
 	//ctx.fillStyle = "#FFAAAA";
 	//ctx.strokeStyle = "#FF5555";
 	ctx.lineWidth = pixelSize/10;

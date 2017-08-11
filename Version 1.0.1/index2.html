@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--SETUP-->
+		<title> Grid Size Changer </title>
+		<!--STYLES-->
+		<link href='style2.css' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<h1 class="title">Conway's Game of Life</h1>
+		<br>
+		<!--CONTENT-->
+		Pixel Size: <input id="pixelSizeInput" type="text" size="8" value="20" onchange="updatePixelSize()">
+		<br>
+		# Rows: <input id="numRowsInput" type="text" size="8" value="50" onchange="updateNumRows()">
+		# Columns: <input id="numColsInput" type="text" size="8" value="50" onchange="updateNumCols()">
+		<br>
+		<canvas id="game" width="1000" height="1000" style="width:500px;height:500px;border:solid 1px black"></canvas>
+		<button onclick="randomFill(40)">randomFill</button>
+		<button onclick="toggleGame()">toggleGame</button>
+
+		<!--SCRIPTS-->
+		<script src="http://d3js.org/d3.v3.js"></script>
+		<script src="script2.js"></script>
+	</body>
+</html>
